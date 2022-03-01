@@ -1,6 +1,6 @@
 ## DOJO 15 Writeup
 
-YesWeHack is a European BugBounty platf
+YesWeHack is a European BugBounty platform
 that regularly releases CTF style challenges known as DOJOs. The point of each challenge is to exploit a specific vulnerability such as XSS, SQLi etc.
 
 During DOJO 15, the goal was to achieve XSS by bypassing a list of filters that aimed to prevent injection of such content.
