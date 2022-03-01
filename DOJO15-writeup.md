@@ -87,3 +87,8 @@ Combining all the parts from above we can craft the final payload
 ```
 
 ![5414d29e-7269-4914-a9d4-acfbead28461-payload-xss](https://user-images.githubusercontent.com/55701068/155089989-bc80065f-033e-444c-8a9b-26d5cab59118.png)
+
+Challenge is now over and you can find the writeup selected by YWH [here](https://blog.yeswehack.com/yeswerhackers/dojo-challenge-15-winners/)
+
+![Screenshot from 2022-03-01 14-49-37](https://user-images.githubusercontent.com/55701068/156171881-80dacc86-6464-419c-9e25-5bfa48c34b55.png)
+
